@@ -7,13 +7,18 @@ from pydantic import BaseModel
 
 import hashlib
 
+import jwt
+
 from starlette.responses import HTMLResponse
 
+import fake_auth_db
+import auth_logic
 
-class AutorizeUserBody(BaseModel):
-    pass
+
 
 class UserAutentificationForm(BaseModel):
+    name: str
+    role_id: int
     shape: str
     length: float
     thin: float
@@ -29,9 +34,6 @@ class UserData(UserAutentificationForm):
 app = FastAPI()
 
 oauth2_scheme = OAuth2PasswordBearer(tokenUrl="token")
-
-
-
 
 @app.get("/autorize_user", response_class=HTMLResponse)
 async def autorize_user():
@@ -52,69 +54,44 @@ async def autorize_user():
 
 @app.post("/autorize_user")
 async def autentificate(form_data: Annotated[OAuth2PasswordRequestForm, Depends()]):
-    email = form_data.username
+    username = form_data.username
     password = form_data.password
     print("login")
-    #    user = query_user(email)
-    #    if not user:
-    # you can return any response or error of your choice
-    #        raise InvalidCredentialsException
-    #    elif password != user['password']:
-    #        raise InvalidCredentialsException
+    if fake_auth_db.fake_db.get_users_password(username) is None:
+        return Response(f"User {username} not exists", status_code=status.HTTP_404_NOT_FOUND)
+    if  auth_logic.code_password(password) != fake_auth_db.fake_db.get_users_password(username):
+        return Response(f"Uncorrect {username} credentials", status_code=status.HTTP_404_NOT_FOUND)
+    secret = auth_logic.generate_authsecret()
+    encoded_jwt = jwt.JWT.encode({"username": username,
+                                  "role": fake_auth_db.fake_db.get_user_role()},
+                                 secret,
+                                 algorithm='HS256')
+    auth_logic.post_services_authsecret(secret)
+    return Response(headers={"access_token": encoded_jwt}, status_code=status.HTTP_200_OK)
 
-    #    token = manager.create_access_token(data={'sub': email})
-    #    response = RedirectResponse(url="/protected",status_code=status.HTTP_302_FOUND)
-    #    manager.set_cookie(response, token)
-    #    return response
-    pass #todo login user
-    #todo post_autorization_code() here if all right
+@app.post("/signin")
+async def create_user(body: UserAutentificationForm):
+    username = body.username
+    password = body.password
+    role = body.role_id
+    if not fake_auth_db.fake_db.check_user_role(role):
+        return Response(headers={"whats_up": f"Uncorrect user role"},
+                        status_code=status.HTTP_404)
+    if not fake_auth_db.fake_db.check_username(username):
+        return Response(headers={"whats_up": f"User {username} already exists"},
+                        status_code=status.HTTP_404_NOT_FOUND)
+    fake_auth_db.fake_db.insert_user(username, auth_logic.code_password(password),
+                                     role, thin=body.thin,
+                                     shape=body.shape, length=body.length)
+    return Response(status_code=status.HTTP_200_OK)
 
-def post_autorization_code(user_id):
-    #todo requests.post to service
-    pass
-
-def check_app():
-    pass #aka
-
-
-@app.post("/client")
-async def client(body: ServiceBaseClass):
-    # verify the token 
-    # TO do after we create first credentials
-
-    # get the client_id and secret from the client application
-    client_secret_input = body.client_secret
-    autorization_code = body.autorization_code      
-
-    # the client secret in the database is "hashed" with a one-way hash
-    hash_object = hashlib.sha1(bytes(client_secret_input, 'utf-8'))
-    hashed_client_secret = hash_object.hexdigest()
-
-    # make a call to the model to authenticate
-    createResponse = check_app(body.user_id, hashed_client_secret, autorization_code)
+@app.post("/update_key")
+async def update_keys():
+    auth_logic.post_services_authsecret(auth_logic.generate_authsecret())
     return Response(status_code=status.HTTP_200_OK)
 
 
-@app.post("/signin")
-async def create_user(body: UserData):
-    pass
-    #todo add to database + explore servers
-
-
-
-#final request
-@app.post("/token")
-async def login(form_data: Annotated[OAuth2PasswordRequestForm, Depends()]):
-    user_dict = {}#fake_users_db.get(form_data.username)
-    if not user_dict:
-        raise HTTPException(status_code=400, detail="Incorrect username or password")
-    user = {}#UserInDB(**user_dict)
-    hashed_password = form_data.password#fake_hash_password(form_data.password)
-    if not hashed_password == user.hashed_password:
-        raise HTTPException(status_code=400, detail="Incorrect username or password")
-
-    return {"access_token": "aaaaa", "token_type": "bearer"} #???? Нужно же ответить 200
-
 if __name__ == "__main__":
     import uvicorn
+    auth_logic.post_services_authsecret(auth_logic.generate_authsecret())
     uvicorn.run(app, host="0.0.0.0", port=8000)

@@ -10,6 +10,19 @@ import hashlib
 import jwt
 from starlette.responses import Response
 
+AUTHSECRET = "SecureNoAzazaza"
+
+class SecretHolder:
+    _secret_key = ""
+
+    @classmethod
+    def set_secretkey(cls, secret_key):
+        cls._secret_key = secret_key
+
+    @classmethod
+    def get_secretkey(cls) -> str:
+        return cls._secret_key
+
 app = FastAPI()
 
 oauth2_scheme = OAuth2PasswordBearer(tokenUrl="token")
@@ -23,19 +36,29 @@ def verify_decor(method):
         await method(req)
     return wrapper
 
-#todo add to safe component (database)
-AUTHSECRET = "BlaBlaBla"
+
+class UpdateKey(BaseModel):
+    service_key: jwt.JWT
 
 class TaskData(BaseModel):
     aaa: str
 
 def verify(token):
     try:
-        decoded = jwt.decode(token, AUTHSECRET, algorithms=['HS256'])
+        decoded = jwt.JWT.decode(token,
+                                 SecretHolder.get_secretkey(),
+                                 algorithms='HS256')
         return decoded
     except (Exception) as error:
         #print(error) #todo logs!
         return None#{"success": False}
+
+@app.post("/update_key")
+async def update_secret_key(req: UpdateKey):
+    decoded = jwt.JWT.decode(req.service_key, AUTHSECRET, algorithms=['HS256'])
+    SecretHolder.set_secretkey(decoded["service_key"])
+    return Response(status_code=status.HTTP_200_OK)
+
 
 @app.post("/add_task", response_class=RedirectResponse)
 @verify_decor
