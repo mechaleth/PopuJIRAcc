@@ -1,0 +1,6 @@
+{
+    "json.format.keepLines": true,
+    "markdown.editor.pasteUrlAsFormattedLink.enabled": "always",
+    "markdown.occurrencesHighlight.enabled": true,
+    "python.terminal.activateEnvInCurrentTerminal": true
+}

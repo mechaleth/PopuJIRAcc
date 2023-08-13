@@ -21,7 +21,8 @@ class AccountData(BaseModel):
 
 InsertStatus = enum.Enum('InsertStatus', {'Inserted': 1,
                                           'UserExists': 2,
-                                          'UnexistingRole': 3})
+                                          'UnexistingRole': 3,
+                                          'Updated': 4})
 
 class UserStorage:
     _user_data: Dict[int, AccountData] = {}
@@ -54,17 +55,19 @@ class UserStorage:
                                                       role_id=user_role_id)
                 break
 
-    def update_users_data(self, auth_data: AuthData, role: Roles):
-        if role.id >= max(self._user_role_data):  # aka max(id)
-            self._user_role_data[max(self._user_role_data)+1] = role
-        if auth_data.user_name not in self._user_auth_data.keys():
-            self._insert_user(auth_data.user_name, role.id)
+    def update_users_data(self, user_name: str, role_id: int):
+        if role_id >= max(self._user_role_data):  # aka max(id)
+            return InsertStatus.UnexistingRole
+        if user_name not in self._user_auth_data.keys():
+            self._insert_user(user_name, role_id)
+            return InsertStatus.Inserted
         else:
-            self._update_user(auth_data.user_name, role.id)
+            self._update_user(user_name, role_id)
+            return InsertStatus.Updated
 
-    def remove_user_data(self, auth_data: AuthData):
-        auth_id = self._user_auth_data[auth_data.user_name].id
-        self._user_auth_data.pop(auth_data.user_name)
+    def remove_user_data(self, user_name: str):
+        auth_id = self._user_auth_data[user_name].id
+        self._user_auth_data.pop(user_name)
         account_id = None
         for acc_id, acc_data in self._user_data.items():
             if acc_data.auth_id == auth_id:
@@ -72,9 +75,16 @@ class UserStorage:
                 break
         self._user_data.pop(account_id)
 
-    def drop_role(self, role: Roles):
+    def insert_role(self, role_id, role_name: str):
         # Ждём обновления ролей и пользователей
-        self._user_role_data.pop(role.id)
+        self._user_role_data[role_id] = role_name
+    
+    def update_role(self, role_id, role_name: str):
+        self._user_role_data[role_id] = role_name
+
+    def drop_role(self, role_id):
+        # Ждём обновления ролей и пользователей
+        self._user_role_data.pop(role_id)
         account_id_list = [acc_id for acc_id, acc_data in self._user_data.items() if acc_data.role_id == role.id]
         for _id in account_id_list:
             self._user_data.pop(_id)

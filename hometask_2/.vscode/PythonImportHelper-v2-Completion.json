@@ -1,0 +1,662 @@
+[
+    {
+        "label": "secrets",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "secrets",
+        "description": "secrets",
+        "detail": "secrets",
+        "documentation": {}
+    },
+    {
+        "label": "requests",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "requests",
+        "description": "requests",
+        "detail": "requests",
+        "documentation": {}
+    },
+    {
+        "label": "jwt",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "jwt",
+        "description": "jwt",
+        "detail": "jwt",
+        "documentation": {}
+    },
+    {
+        "label": "hashlib",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "hashlib",
+        "description": "hashlib",
+        "detail": "hashlib",
+        "documentation": {}
+    },
+    {
+        "label": "pika",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pika",
+        "description": "pika",
+        "detail": "pika",
+        "documentation": {}
+    },
+    {
+        "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "Annotated",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Dict",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Dict",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Tuple",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Annotated",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Depends",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "FastAPI",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "HTTPException",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "status",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Depends",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "FastAPI",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "HTTPException",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "status",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Request",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Response",
+        "importPath": "fastapi.openapi.models",
+        "description": "fastapi.openapi.models",
+        "isExtraImport": true,
+        "detail": "fastapi.openapi.models",
+        "documentation": {}
+    },
+    {
+        "label": "OAuth2PasswordBearer",
+        "importPath": "fastapi.security",
+        "description": "fastapi.security",
+        "isExtraImport": true,
+        "detail": "fastapi.security",
+        "documentation": {}
+    },
+    {
+        "label": "OAuth2PasswordRequestForm",
+        "importPath": "fastapi.security",
+        "description": "fastapi.security",
+        "isExtraImport": true,
+        "detail": "fastapi.security",
+        "documentation": {}
+    },
+    {
+        "label": "OAuth2PasswordBearer",
+        "importPath": "fastapi.security",
+        "description": "fastapi.security",
+        "isExtraImport": true,
+        "detail": "fastapi.security",
+        "documentation": {}
+    },
+    {
+        "label": "HTMLResponse",
+        "importPath": "starlette.responses",
+        "description": "starlette.responses",
+        "isExtraImport": true,
+        "detail": "starlette.responses",
+        "documentation": {}
+    },
+    {
+        "label": "Response",
+        "importPath": "starlette.responses",
+        "description": "starlette.responses",
+        "isExtraImport": true,
+        "detail": "starlette.responses",
+        "documentation": {}
+    },
+    {
+        "label": "fake_auth_db",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "fake_auth_db",
+        "description": "fake_auth_db",
+        "detail": "fake_auth_db",
+        "documentation": {}
+    },
+    {
+        "label": "auth_logic",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "auth_logic",
+        "description": "auth_logic",
+        "detail": "auth_logic",
+        "documentation": {}
+    },
+    {
+        "label": "enum",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "enum",
+        "description": "enum",
+        "detail": "enum",
+        "documentation": {}
+    },
+    {
+        "label": "RedirectResponse",
+        "importPath": "fastapi.responses",
+        "description": "fastapi.responses",
+        "isExtraImport": true,
+        "detail": "fastapi.responses",
+        "documentation": {}
+    },
+    {
+        "label": "message",
+        "importPath": "rabbit_send_concept",
+        "description": "rabbit_send_concept",
+        "isExtraImport": true,
+        "detail": "rabbit_send_concept",
+        "documentation": {}
+    },
+    {
+        "label": "ServiceList",
+        "kind": 6,
+        "importPath": "auth.auth_logic",
+        "description": "auth.auth_logic",
+        "peekOfCode": "class ServiceList:\n    _service_url_list: list = [\"localhost:8001\"]#todo вообще, это в конфигах должно быть, ip/host/port!\n    @classmethod\n    def get_service_list(cls) -> list:\n        return cls._service_url_list\ndef code_password(password: str, thin, shape, length):\n    return f\"{thin}000{shape}111{length}{hashlib.sha256(password)}\"\ndef generate_authsecret():\n    return secrets.token_urlsafe(16)\ndef post_services_authsecret(secret: str):",
+        "detail": "auth.auth_logic",
+        "documentation": {}
+    },
+    {
+        "label": "code_password",
+        "kind": 2,
+        "importPath": "auth.auth_logic",
+        "description": "auth.auth_logic",
+        "peekOfCode": "def code_password(password: str, thin, shape, length):\n    return f\"{thin}000{shape}111{length}{hashlib.sha256(password)}\"\ndef generate_authsecret():\n    return secrets.token_urlsafe(16)\ndef post_services_authsecret(secret: str):\n    for sevice_url in ServiceList.get_service_list():\n        encoded_secret_jwt = jwt.JWT.encode({\"service_key\": secret},\n                                            AUTHSECRET,\n                                            algorithm='HS256')\n        requests.post(f\"{sevice_url}/update_key\", {\"service_key\": encoded_secret_jwt})",
+        "detail": "auth.auth_logic",
+        "documentation": {}
+    },
+    {
+        "label": "generate_authsecret",
+        "kind": 2,
+        "importPath": "auth.auth_logic",
+        "description": "auth.auth_logic",
+        "peekOfCode": "def generate_authsecret():\n    return secrets.token_urlsafe(16)\ndef post_services_authsecret(secret: str):\n    for sevice_url in ServiceList.get_service_list():\n        encoded_secret_jwt = jwt.JWT.encode({\"service_key\": secret},\n                                            AUTHSECRET,\n                                            algorithm='HS256')\n        requests.post(f\"{sevice_url}/update_key\", {\"service_key\": encoded_secret_jwt})",
+        "detail": "auth.auth_logic",
+        "documentation": {}
+    },
+    {
+        "label": "post_services_authsecret",
+        "kind": 2,
+        "importPath": "auth.auth_logic",
+        "description": "auth.auth_logic",
+        "peekOfCode": "def post_services_authsecret(secret: str):\n    for sevice_url in ServiceList.get_service_list():\n        encoded_secret_jwt = jwt.JWT.encode({\"service_key\": secret},\n                                            AUTHSECRET,\n                                            algorithm='HS256')\n        requests.post(f\"{sevice_url}/update_key\", {\"service_key\": encoded_secret_jwt})",
+        "detail": "auth.auth_logic",
+        "documentation": {}
+    },
+    {
+        "label": "AUTHSECRET",
+        "kind": 5,
+        "importPath": "auth.auth_logic",
+        "description": "auth.auth_logic",
+        "peekOfCode": "AUTHSECRET = \"SecureNoAzazaza\"\nclass ServiceList:\n    _service_url_list: list = [\"localhost:8001\"]#todo вообще, это в конфигах должно быть, ip/host/port!\n    @classmethod\n    def get_service_list(cls) -> list:\n        return cls._service_url_list\ndef code_password(password: str, thin, shape, length):\n    return f\"{thin}000{shape}111{length}{hashlib.sha256(password)}\"\ndef generate_authsecret():\n    return secrets.token_urlsafe(16)",
+        "detail": "auth.auth_logic",
+        "documentation": {}
+    },
+    {
+        "label": "AuthData",
+        "kind": 6,
+        "importPath": "auth.auth_rabbit",
+        "description": "auth.auth_rabbit",
+        "peekOfCode": "class AuthData(BaseModel):\n    id: int\n    user_name: str\n    role_id: int\nclass Roles(BaseModel):\n    id: int\n    role: str\nclass RabbitConnector:\n    def __init__(self) -> None:\n        self._connection = pika.BlockingConnection(pika.ConnectionParameters('localhost'))",
+        "detail": "auth.auth_rabbit",
+        "documentation": {}
+    },
+    {
+        "label": "Roles",
+        "kind": 6,
+        "importPath": "auth.auth_rabbit",
+        "description": "auth.auth_rabbit",
+        "peekOfCode": "class Roles(BaseModel):\n    id: int\n    role: str\nclass RabbitConnector:\n    def __init__(self) -> None:\n        self._connection = pika.BlockingConnection(pika.ConnectionParameters('localhost'))\n    def __del__(self):\n        self._connection.close()\n    def get_connection(self):\n        return self._connection",
+        "detail": "auth.auth_rabbit",
+        "documentation": {}
+    },
+    {
+        "label": "RabbitConnector",
+        "kind": 6,
+        "importPath": "auth.auth_rabbit",
+        "description": "auth.auth_rabbit",
+        "peekOfCode": "class RabbitConnector:\n    def __init__(self) -> None:\n        self._connection = pika.BlockingConnection(pika.ConnectionParameters('localhost'))\n    def __del__(self):\n        self._connection.close()\n    def get_connection(self):\n        return self._connection\nclass RabbitSendManager:\n    def __init__(self, connection) -> None:\n        self._channel = connection.channel()",
+        "detail": "auth.auth_rabbit",
+        "documentation": {}
+    },
+    {
+        "label": "RabbitSendManager",
+        "kind": 6,
+        "importPath": "auth.auth_rabbit",
+        "description": "auth.auth_rabbit",
+        "peekOfCode": "class RabbitSendManager:\n    def __init__(self, connection) -> None:\n        self._channel = connection.channel()\n    def _data_push(self, exchange, routing_key, message):\n        self._channel.exchange_declare(exchange=exchange, exchange_type='topic')\n        self._channel.basic_publish(exchange=exchange, routing_key=routing_key, body=message)\n    def insert_users_data(self, user_id: int, user_name: str, role_id: str):\n        self._data_push(exchange=\"account\", routing_key = \"insert.user_data\",\n                        message = AuthData(id=user_id, user_name=user_name,role_id=role_id).model_dump())\n    def update_users_data(self, user_id: int, user_name: str, role_id: str):",
+        "detail": "auth.auth_rabbit",
+        "documentation": {}
+    },
+    {
+        "label": "UserAutentificationForm",
+        "kind": 6,
+        "importPath": "auth.auth_server_api",
+        "description": "auth.auth_server_api",
+        "peekOfCode": "class UserAutentificationForm(BaseModel):\n    name: str\n    role_id: int\n    shape: str\n    length: float\n    thin: float\nclass ServiceBaseClass(BaseModel):\n    autorization_code: str\n    user_id: str\n    client_secret: str",
+        "detail": "auth.auth_server_api",
+        "documentation": {}
+    },
+    {
+        "label": "ServiceBaseClass",
+        "kind": 6,
+        "importPath": "auth.auth_server_api",
+        "description": "auth.auth_server_api",
+        "peekOfCode": "class ServiceBaseClass(BaseModel):\n    autorization_code: str\n    user_id: str\n    client_secret: str\nclass UserData(UserAutentificationForm):\n    user_id: str\napp = FastAPI()\noauth2_scheme = OAuth2PasswordBearer(tokenUrl=\"token\")\n@app.get(\"/autorize_user\", response_class=HTMLResponse)\nasync def autorize_user():",
+        "detail": "auth.auth_server_api",
+        "documentation": {}
+    },
+    {
+        "label": "UserData",
+        "kind": 6,
+        "importPath": "auth.auth_server_api",
+        "description": "auth.auth_server_api",
+        "peekOfCode": "class UserData(UserAutentificationForm):\n    user_id: str\napp = FastAPI()\noauth2_scheme = OAuth2PasswordBearer(tokenUrl=\"token\")\n@app.get(\"/autorize_user\", response_class=HTMLResponse)\nasync def autorize_user():\n    return \"\"\"\n    <!DOCTYPE html>\n    <html>\n       <body>",
+        "detail": "auth.auth_server_api",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "auth.auth_server_api",
+        "description": "auth.auth_server_api",
+        "peekOfCode": "app = FastAPI()\noauth2_scheme = OAuth2PasswordBearer(tokenUrl=\"token\")\n@app.get(\"/autorize_user\", response_class=HTMLResponse)\nasync def autorize_user():\n    return \"\"\"\n    <!DOCTYPE html>\n    <html>\n       <body>\n          <form method=\"POST\"  action=\"/login\">\n             <label for=\"username\">Username:</label><br>",
+        "detail": "auth.auth_server_api",
+        "documentation": {}
+    },
+    {
+        "label": "oauth2_scheme",
+        "kind": 5,
+        "importPath": "auth.auth_server_api",
+        "description": "auth.auth_server_api",
+        "peekOfCode": "oauth2_scheme = OAuth2PasswordBearer(tokenUrl=\"token\")\n@app.get(\"/autorize_user\", response_class=HTMLResponse)\nasync def autorize_user():\n    return \"\"\"\n    <!DOCTYPE html>\n    <html>\n       <body>\n          <form method=\"POST\"  action=\"/login\">\n             <label for=\"username\">Username:</label><br>\n             <input type=\"text\" id=\"username\" name=\"username\" value=\"johndoe@mail.com\"><br>",
+        "detail": "auth.auth_server_api",
+        "documentation": {}
+    },
+    {
+        "label": "AuthData",
+        "kind": 6,
+        "importPath": "auth.fake_auth_db",
+        "description": "auth.fake_auth_db",
+        "peekOfCode": "class AuthData(BaseModel):\n    id: int\n    user_name: str\n    password: str\n    shape: str\n    length: float\n    thin: float\nclass Roles(BaseModel):\n    id: int\n    role: str",
+        "detail": "auth.fake_auth_db",
+        "documentation": {}
+    },
+    {
+        "label": "Roles",
+        "kind": 6,
+        "importPath": "auth.fake_auth_db",
+        "description": "auth.fake_auth_db",
+        "peekOfCode": "class Roles(BaseModel):\n    id: int\n    role: str\nclass AccountData(BaseModel):\n    id: int\n    auth_id: int  # AuthData\n    role_id: int  # Roles\nInsertStatus = enum.Enum('InsertStatus', {'Inserted': 1,\n                                          'UserExists': 2,\n                                          'UnexistingRole': 3})",
+        "detail": "auth.fake_auth_db",
+        "documentation": {}
+    },
+    {
+        "label": "AccountData",
+        "kind": 6,
+        "importPath": "auth.fake_auth_db",
+        "description": "auth.fake_auth_db",
+        "peekOfCode": "class AccountData(BaseModel):\n    id: int\n    auth_id: int  # AuthData\n    role_id: int  # Roles\nInsertStatus = enum.Enum('InsertStatus', {'Inserted': 1,\n                                          'UserExists': 2,\n                                          'UnexistingRole': 3})\nclass UserStorage:\n    _user_data: List[AccountData] = {}\n    _user_role_data: List[Roles] = {}",
+        "detail": "auth.fake_auth_db",
+        "documentation": {}
+    },
+    {
+        "label": "UserStorage",
+        "kind": 6,
+        "importPath": "auth.fake_auth_db",
+        "description": "auth.fake_auth_db",
+        "peekOfCode": "class UserStorage:\n    _user_data: List[AccountData] = {}\n    _user_role_data: List[Roles] = {}\n    _user_auth_data: Dict[str, AuthData] = {}\n    _account_auth_max_id: int = 0\n    __instance = None\n    def __new__(cls):\n        if cls.__instance is None:\n            cls.__instance = super(UserStorage, cls).__new__(cls)\n        return cls.__instance",
+        "detail": "auth.fake_auth_db",
+        "documentation": {}
+    },
+    {
+        "label": "InsertStatus",
+        "kind": 5,
+        "importPath": "auth.fake_auth_db",
+        "description": "auth.fake_auth_db",
+        "peekOfCode": "InsertStatus = enum.Enum('InsertStatus', {'Inserted': 1,\n                                          'UserExists': 2,\n                                          'UnexistingRole': 3})\nclass UserStorage:\n    _user_data: List[AccountData] = {}\n    _user_role_data: List[Roles] = {}\n    _user_auth_data: Dict[str, AuthData] = {}\n    _account_auth_max_id: int = 0\n    __instance = None\n    def __new__(cls):",
+        "detail": "auth.fake_auth_db",
+        "documentation": {}
+    },
+    {
+        "label": "fake_db",
+        "kind": 5,
+        "importPath": "auth.fake_auth_db",
+        "description": "auth.fake_auth_db",
+        "peekOfCode": "fake_db = UserStorage()",
+        "detail": "auth.fake_auth_db",
+        "documentation": {}
+    },
+    {
+        "label": "AuthData",
+        "kind": 6,
+        "importPath": "tracker.fake_tracker_db",
+        "description": "tracker.fake_tracker_db",
+        "peekOfCode": "class AuthData(BaseModel):\n    id: int\n    user_name: str\nclass Roles(BaseModel):\n    id: int\n    role: str\nclass AccountData(BaseModel):\n    id: int\n    auth_id: int  # AuthData\n    role_id: int  # Roles",
+        "detail": "tracker.fake_tracker_db",
+        "documentation": {}
+    },
+    {
+        "label": "Roles",
+        "kind": 6,
+        "importPath": "tracker.fake_tracker_db",
+        "description": "tracker.fake_tracker_db",
+        "peekOfCode": "class Roles(BaseModel):\n    id: int\n    role: str\nclass AccountData(BaseModel):\n    id: int\n    auth_id: int  # AuthData\n    role_id: int  # Roles\nInsertStatus = enum.Enum('InsertStatus', {'Inserted': 1,\n                                          'UserExists': 2,\n                                          'UnexistingRole': 3,",
+        "detail": "tracker.fake_tracker_db",
+        "documentation": {}
+    },
+    {
+        "label": "AccountData",
+        "kind": 6,
+        "importPath": "tracker.fake_tracker_db",
+        "description": "tracker.fake_tracker_db",
+        "peekOfCode": "class AccountData(BaseModel):\n    id: int\n    auth_id: int  # AuthData\n    role_id: int  # Roles\nInsertStatus = enum.Enum('InsertStatus', {'Inserted': 1,\n                                          'UserExists': 2,\n                                          'UnexistingRole': 3,\n                                          'Updated': 4})\nclass UserStorage:\n    _user_data: Dict[int, AccountData] = {}",
+        "detail": "tracker.fake_tracker_db",
+        "documentation": {}
+    },
+    {
+        "label": "UserStorage",
+        "kind": 6,
+        "importPath": "tracker.fake_tracker_db",
+        "description": "tracker.fake_tracker_db",
+        "peekOfCode": "class UserStorage:\n    _user_data: Dict[int, AccountData] = {}\n    _user_role_data: Dict[int, Roles] = {}\n    _user_auth_data: Dict[str, AuthData] = {}\n    _account_auth_max_id: int = 0\n    __instance = None\n    def __new__(cls):\n        if cls.__instance is None:\n            cls.__instance = super(UserStorage, cls).__new__(cls)\n        return cls.__instance",
+        "detail": "tracker.fake_tracker_db",
+        "documentation": {}
+    },
+    {
+        "label": "InsertStatus",
+        "kind": 5,
+        "importPath": "tracker.fake_tracker_db",
+        "description": "tracker.fake_tracker_db",
+        "peekOfCode": "InsertStatus = enum.Enum('InsertStatus', {'Inserted': 1,\n                                          'UserExists': 2,\n                                          'UnexistingRole': 3,\n                                          'Updated': 4})\nclass UserStorage:\n    _user_data: Dict[int, AccountData] = {}\n    _user_role_data: Dict[int, Roles] = {}\n    _user_auth_data: Dict[str, AuthData] = {}\n    _account_auth_max_id: int = 0\n    __instance = None",
+        "detail": "tracker.fake_tracker_db",
+        "documentation": {}
+    },
+    {
+        "label": "update_account_data",
+        "kind": 2,
+        "importPath": "tracker.task_tracker_base",
+        "description": "tracker.task_tracker_base",
+        "peekOfCode": "def update_account_data():\n    pass",
+        "detail": "tracker.task_tracker_base",
+        "documentation": {}
+    },
+    {
+        "label": "SecretHolder",
+        "kind": 6,
+        "importPath": "tracker.task_tracker_server",
+        "description": "tracker.task_tracker_server",
+        "peekOfCode": "class SecretHolder:\n    _secret_key = \"\"\n    @classmethod\n    def set_secretkey(cls, secret_key):\n        cls._secret_key = secret_key\n    @classmethod\n    def get_secretkey(cls) -> str:\n        return cls._secret_key\napp = FastAPI()\noauth2_scheme = OAuth2PasswordBearer(tokenUrl=\"token\")",
+        "detail": "tracker.task_tracker_server",
+        "documentation": {}
+    },
+    {
+        "label": "UpdateKey",
+        "kind": 6,
+        "importPath": "tracker.task_tracker_server",
+        "description": "tracker.task_tracker_server",
+        "peekOfCode": "class UpdateKey(BaseModel):\n    service_key: jwt.JWT\nclass TaskData(BaseModel):\n    aaa: str\ndef verify(token):\n    try:\n        decoded = jwt.JWT.decode(token,\n                                 SecretHolder.get_secretkey(),\n                                 algorithms='HS256')\n        return decoded",
+        "detail": "tracker.task_tracker_server",
+        "documentation": {}
+    },
+    {
+        "label": "TaskData",
+        "kind": 6,
+        "importPath": "tracker.task_tracker_server",
+        "description": "tracker.task_tracker_server",
+        "peekOfCode": "class TaskData(BaseModel):\n    aaa: str\ndef verify(token):\n    try:\n        decoded = jwt.JWT.decode(token,\n                                 SecretHolder.get_secretkey(),\n                                 algorithms='HS256')\n        return decoded\n    except (Exception) as error:\n        #print(error) #todo logs!",
+        "detail": "tracker.task_tracker_server",
+        "documentation": {}
+    },
+    {
+        "label": "verify_decor",
+        "kind": 2,
+        "importPath": "tracker.task_tracker_server",
+        "description": "tracker.task_tracker_server",
+        "peekOfCode": "def verify_decor(method):\n    async def wrapper(req: Request):\n        if not verify(req.headers.get(\"access_token\")):\n            return RedirectResponse(url=\"http://localhost:8000/login\",  # todo вынести в параметры\n                                    status_code=status.HTTP_302_FOUND,\n                                    headers={\"x-error\": \"Invalid credentials\"})\n        await method(req)\n    return wrapper\nclass UpdateKey(BaseModel):\n    service_key: jwt.JWT",
+        "detail": "tracker.task_tracker_server",
+        "documentation": {}
+    },
+    {
+        "label": "verify",
+        "kind": 2,
+        "importPath": "tracker.task_tracker_server",
+        "description": "tracker.task_tracker_server",
+        "peekOfCode": "def verify(token):\n    try:\n        decoded = jwt.JWT.decode(token,\n                                 SecretHolder.get_secretkey(),\n                                 algorithms='HS256')\n        return decoded\n    except (Exception) as error:\n        #print(error) #todo logs!\n        return None#{\"success\": False}\n@app.post(\"/update_key\")",
+        "detail": "tracker.task_tracker_server",
+        "documentation": {}
+    },
+    {
+        "label": "AUTHSECRET",
+        "kind": 5,
+        "importPath": "tracker.task_tracker_server",
+        "description": "tracker.task_tracker_server",
+        "peekOfCode": "AUTHSECRET = \"SecureNoAzazaza\"\nclass SecretHolder:\n    _secret_key = \"\"\n    @classmethod\n    def set_secretkey(cls, secret_key):\n        cls._secret_key = secret_key\n    @classmethod\n    def get_secretkey(cls) -> str:\n        return cls._secret_key\napp = FastAPI()",
+        "detail": "tracker.task_tracker_server",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "tracker.task_tracker_server",
+        "description": "tracker.task_tracker_server",
+        "peekOfCode": "app = FastAPI()\noauth2_scheme = OAuth2PasswordBearer(tokenUrl=\"token\")\ndef verify_decor(method):\n    async def wrapper(req: Request):\n        if not verify(req.headers.get(\"access_token\")):\n            return RedirectResponse(url=\"http://localhost:8000/login\",  # todo вынести в параметры\n                                    status_code=status.HTTP_302_FOUND,\n                                    headers={\"x-error\": \"Invalid credentials\"})\n        await method(req)\n    return wrapper",
+        "detail": "tracker.task_tracker_server",
+        "documentation": {}
+    },
+    {
+        "label": "oauth2_scheme",
+        "kind": 5,
+        "importPath": "tracker.task_tracker_server",
+        "description": "tracker.task_tracker_server",
+        "peekOfCode": "oauth2_scheme = OAuth2PasswordBearer(tokenUrl=\"token\")\ndef verify_decor(method):\n    async def wrapper(req: Request):\n        if not verify(req.headers.get(\"access_token\")):\n            return RedirectResponse(url=\"http://localhost:8000/login\",  # todo вынести в параметры\n                                    status_code=status.HTTP_302_FOUND,\n                                    headers={\"x-error\": \"Invalid credentials\"})\n        await method(req)\n    return wrapper\nclass UpdateKey(BaseModel):",
+        "detail": "tracker.task_tracker_server",
+        "documentation": {}
+    },
+    {
+        "label": "RabbitConnector",
+        "kind": 6,
+        "importPath": "tracker.tracker_rabbit",
+        "description": "tracker.tracker_rabbit",
+        "peekOfCode": "class RabbitConnector:\n    def __init__(self) -> None:\n        self._connection = pika.BlockingConnection(pika.ConnectionParameters('localhost'))\n    def __del__(self):\n        self._connection.close()\n    def get_connection(self):\n        return self._connection\nclass RabbitSendManager:\n    def __init__(self, connection) -> None:\n        self._connection = connection",
+        "detail": "tracker.tracker_rabbit",
+        "documentation": {}
+    },
+    {
+        "label": "RabbitSendManager",
+        "kind": 6,
+        "importPath": "tracker.tracker_rabbit",
+        "description": "tracker.tracker_rabbit",
+        "peekOfCode": "class RabbitSendManager:\n    def __init__(self, connection) -> None:\n        self._connection = connection\n        self._channel = connection.channel()\n        result = self._channel.queue_declare(queue='', exclusive=True) #стандартная пустая очередь, сервер придумает название; консьюмер закрылся - сворачиваем очередь\n        queue_name = result.method.queue\n        binding_keys = (\"account.*\",)\n        for binding_key in binding_keys:\n            self._channel.queue_bind(exchange='topic_logs', queue=queue_name, routing_key=binding_key)\n    def _data_get(self, exchange, routing_key, message):",
+        "detail": "tracker.tracker_rabbit",
+        "documentation": {}
+    }
+]
